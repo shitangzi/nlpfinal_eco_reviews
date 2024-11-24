@@ -13,8 +13,10 @@ print("---Finish step 2")
 # Step 3: Select 4000 samples with a 1:1 balance between recommended and not recommended
 recommended = data[data["Recommended IND"] == 1]
 not_recommended = data[data["Recommended IND"] == 0]
-recommended_sample = recommended.sample(n=2500, random_state=42)
-not_recommended_sample = not_recommended.sample(n=2500, random_state=42)
+print(len(recommended))
+print(len(not_recommended))
+recommended_sample = recommended.sample(n=6500, random_state=42)
+not_recommended_sample = not_recommended.sample(n=3500, random_state=42)
 balanced_data = pd.concat([recommended_sample, not_recommended_sample])
 balanced_data = balanced_data.sample(frac=1, random_state=42)
 print("---Finish step 3")
@@ -42,7 +44,7 @@ cleaned_data = balanced_data[columns_to_keep]
 print("---Finish step 6")
 
 # Step 7: Save the processed data to a new CSV file
-output_file = "processed_real_data.csv"
+output_file = "processed_real_data_large.csv"
 cleaned_data.insert(0, "", range(0, len(cleaned_data)))
 cleaned_data.to_csv(output_file, index=False)
 print("---Finish step 7")
