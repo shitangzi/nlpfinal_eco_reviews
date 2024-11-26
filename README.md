@@ -1,7 +1,7 @@
 # GRU-based Sentiment Analysis for E-commerce Reviews README
 **Author**: Sitang Gong (sg669), Jieying Zhang (z450), Chelsea Lyu (jl1230) 
 ## Project Overview
-This is the final project for ECE684 at Duke University. The goal of this project is to analyze user reviews and classify their sentiment to determine if a
+The goal of this project is to analyze user reviews and classify their sentiment to determine if a
 product is recommended by users. We built a GRU-based model to analyze e-commerce reviews and determine whether
 users recommend a product. By using product ratings as additional input and training the model
 on a larger dataset, we improved its ability to capture patterns in the reviews. 
