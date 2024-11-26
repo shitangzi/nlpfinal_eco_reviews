@@ -3,7 +3,7 @@ import string
 import contractions
 
 # Step 1: Read the data
-file_path = "E-Commerce_Reviews.csv"  # Replace with your data file path
+file_path = "E-Commerce_Reviews.csv"  
 data = pd.read_csv(file_path)
 
 # Step 2: Remove rows with missing values
