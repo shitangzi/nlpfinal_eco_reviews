@@ -37,5 +37,7 @@ Run `python3 generate_test_cases.py` to create the 20randomcases.csv file.
 * **train real GRU rate large**: Training on the larger real dataset with rating.
 
 ### Usage Instruction
-We used Google Colab's GPU for training, so we ran out code on the Google Colab platform. Our approach was to upload all the `.ipynb` files to Colab and place all the CSV files generated and processed by `data_process` in the same folder as the code files. Then, simply click `Run All` in each `ipynb` file to execute the entire code.
+We used Google Colab's GPU for training, so we ran out code on the Google Colab platform. Our approach was to upload all the `.ipynb` files to Colab and place all the CSV files generated and processed by `data_process` in the same folder as the code files. 
+
+Then, change the file path in the third cell to make sure that the code can read the cvs file, and simply click `Run All` in each `ipynb` file to execute the entire code.
 
