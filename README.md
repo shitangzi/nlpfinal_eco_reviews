@@ -1,10 +1,8 @@
-# GRU-based Sentiment Analysis for E-commerce Reviews README
+# Bayes and GRU-based Sentiment Analysis for E-commerce Reviews README
 **Author**: Sitang Gong (sg669), Jieying Zhang (z450), Chelsea Lyu (jl1230) 
 ## Project Overview
 The goal of this project is to analyze user reviews and classify their sentiment to determine if a
-product is recommended by users. We built a GRU-based model to analyze e-commerce reviews and determine whether
-users recommend a product. By using product ratings as additional input and training the model
-on a larger dataset, we improved its ability to capture patterns in the reviews. 
+product is recommended by users. We built both Bayes and  GRU-based models to compare and analyze e-commerce reviews and determine whether users recommend a product. By using product ratings as additional input and training the model on a larger dataset, we improved its ability to capture patterns in the reviews. 
 
 ## Data Process Folder
 ### CSV file:
