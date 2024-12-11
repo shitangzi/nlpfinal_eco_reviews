@@ -27,7 +27,7 @@ Use `python3 synthesize_data.py` to create synthetic datasets.
 
 Run `python3 generate_test_cases.py` to create the 20randomcases.csv file.
 
-## Train Folder
+## GRU_train_code Folder
 ### ipynb file:
 * **train generate GRU**: Training on synthesized data without additional features.
 * **train generate GRU rate**: Training on synthesized data with rating as an auxiliary input.
@@ -41,3 +41,13 @@ We used Google Colab's GPU for training, so we ran out code on the Google Colab 
 
 Then, change the file path in the third cell to make sure that the code can read the cvs file, and simply click `Run All` in each `ipynb` file to execute the entire code.
 
+## Bayes_train_code Folder
+### ipynb file:
+* **bayes classifier generate**: Training on synthesized data without additional features.
+* **bayes classifier real**: Training on the smaller real dataset without additional features.
+* **bayes classifier real large**: Training on the larger real dataset without additional features.
+
+### Usage Instruction
+Same as GRU training code, we used Google Colab's GPU for training, so we ran out code on the Google Colab platform. Our approach was to upload all the `.ipynb` files to Colab and place all the CSV files generated and processed by `data_process` in the same folder as the code files. 
+
+Then, change the file path in the third cell to make sure that the code can read the cvs file, and simply click `Run All` in each `ipynb` file to execute the entire code.
